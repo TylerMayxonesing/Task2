@@ -14,6 +14,7 @@ class ThirdViewController: UIViewController, ChartViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         pieChart.delegate = self
     }
     

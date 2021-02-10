@@ -14,6 +14,7 @@ class SecondViewController: UIViewController, ChartViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         lineChart.delegate = self
     }
     

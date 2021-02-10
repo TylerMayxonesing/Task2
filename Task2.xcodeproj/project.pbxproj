@@ -18,6 +18,7 @@
 		2F92757025D38B450045D505 /* Task2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F92756F25D38B450045D505 /* Task2UITests.swift */; };
 		2F92757E25D38D120045D505 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F92757D25D38D120045D505 /* SecondViewController.swift */; };
 		2F92758025D38D220045D505 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F92757F25D38D220045D505 /* ThirdViewController.swift */; };
+		2F92758225D3996C0045D505 /* TabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F92758125D3996C0045D505 /* TabController.swift */; };
 		673DED4CF7BE712BEA376EAC /* Pods_Task2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E26FD0388B0FDD6ECEFFBE1 /* Pods_Task2Tests.framework */; };
 		9FB3CC0A0AE86106BC0465C4 /* Pods_Task2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 110A2CC929FD96D62089D814 /* Pods_Task2.framework */; };
 /* End PBXBuildFile section */
@@ -59,6 +60,7 @@
 		2F92757125D38B450045D505 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F92757D25D38D120045D505 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		2F92757F25D38D220045D505 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		2F92758125D3996C0045D505 /* TabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabController.swift; sourceTree = "<group>"; };
 		5C4DD2A10DC031B09A6B399B /* Pods-Task2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task2.debug.xcconfig"; path = "Target Support Files/Pods-Task2/Pods-Task2.debug.xcconfig"; sourceTree = "<group>"; };
 		75C0477F100EA00CFD750D87 /* Pods-Task2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Task2Tests.release.xcconfig"; path = "Target Support Files/Pods-Task2Tests/Pods-Task2Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7AB1CD4E0CD0992D804EFAED /* Pods_Task2_Task2UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Task2_Task2UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +141,7 @@
 				2F92755B25D38B450045D505 /* Info.plist */,
 				2F92757D25D38D120045D505 /* SecondViewController.swift */,
 				2F92757F25D38D220045D505 /* ThirdViewController.swift */,
+				2F92758125D3996C0045D505 /* TabController.swift */,
 			);
 			path = Task2;
 			sourceTree = "<group>";
@@ -413,6 +416,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F92757E25D38D120045D505 /* SecondViewController.swift in Sources */,
+				2F92758225D3996C0045D505 /* TabController.swift in Sources */,
 				2F92755225D38B440045D505 /* ViewController.swift in Sources */,
 				2F92758025D38D220045D505 /* ThirdViewController.swift in Sources */,
 				2F92754E25D38B440045D505 /* AppDelegate.swift in Sources */,

@@ -14,6 +14,7 @@ class ViewController: UIViewController, ChartViewDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .white
         barChart.delegate = self
     }
     
