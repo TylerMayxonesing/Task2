@@ -1,6 +1,6 @@
 //
-//  ViewController.swift
-//  Graphs
+//  ThirdViewController.swift
+//  Task2
 //
 //  Created by Tyler on 2/9/21.
 //
@@ -8,27 +8,27 @@
 import Charts
 import UIKit
 
-class ViewController: UIViewController, ChartViewDelegate {
-    
-    var barChart = BarChartView()
+class ThirdViewController: UIViewController, ChartViewDelegate {
+
+    var pieChart = PieChartView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        barChart.delegate = self
+        pieChart.delegate = self
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        barChart.frame = CGRect(x:0, y:0,
+        pieChart.frame = CGRect(x:0, y:0,
                                 width: self.view.frame.size.width,
                                 height: self.view.frame.size.width)
-        barChart.center = view.center
-        
-        view.addSubview(barChart)
+        pieChart.center = view.center
+        view.addSubview(pieChart)
         
         // Dumby Data
-        var entries = [BarChartDataEntry]()
+        var entries = [ChartDataEntry]()
+        
         
         entries.append(BarChartDataEntry(x: Double(0), y: Double(2)))
         entries.append(BarChartDataEntry(x: Double(1), y: Double(20)))
@@ -41,14 +41,16 @@ class ViewController: UIViewController, ChartViewDelegate {
         entries.append(BarChartDataEntry(x: Double(8), y: Double(15)))
         entries.append(BarChartDataEntry(x: Double(9), y: Double(19)))
         entries.append(BarChartDataEntry(x: Double(10), y: Double(12)))
-                
-        let set = BarChartDataSet(entries: entries)
-        set.colors = ChartColorTemplates.colorful()
         
-        let data = BarChartData(dataSet: set)
-        barChart.data = data
+            
+        
+                
+        let set = PieChartDataSet(entries: entries)
+        set.colors = ChartColorTemplates.pastel()
+        
+        let data = PieChartData(dataSet: set)
+        pieChart.data = data
     }
-
 
 }
 

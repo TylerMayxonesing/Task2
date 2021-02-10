@@ -1,6 +1,6 @@
 //
-//  ViewController.swift
-//  Graphs
+//  SecondViewController.swift
+//  Task2
 //
 //  Created by Tyler on 2/9/21.
 //
@@ -8,27 +8,27 @@
 import Charts
 import UIKit
 
-class ViewController: UIViewController, ChartViewDelegate {
-    
-    var barChart = BarChartView()
+class SecondViewController: UIViewController, ChartViewDelegate {
+
+    var lineChart = LineChartView()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        barChart.delegate = self
+        lineChart.delegate = self
     }
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        barChart.frame = CGRect(x:0, y:0,
+        lineChart.frame = CGRect(x:0, y:0,
                                 width: self.view.frame.size.width,
                                 height: self.view.frame.size.width)
-        barChart.center = view.center
-        
-        view.addSubview(barChart)
+        lineChart.center = view.center
+        view.addSubview(lineChart)
         
         // Dumby Data
-        var entries = [BarChartDataEntry]()
+        var entries = [ChartDataEntry]()
+        
         
         entries.append(BarChartDataEntry(x: Double(0), y: Double(2)))
         entries.append(BarChartDataEntry(x: Double(1), y: Double(20)))
@@ -41,14 +41,15 @@ class ViewController: UIViewController, ChartViewDelegate {
         entries.append(BarChartDataEntry(x: Double(8), y: Double(15)))
         entries.append(BarChartDataEntry(x: Double(9), y: Double(19)))
         entries.append(BarChartDataEntry(x: Double(10), y: Double(12)))
-                
-        let set = BarChartDataSet(entries: entries)
-        set.colors = ChartColorTemplates.colorful()
         
-        let data = BarChartData(dataSet: set)
-        barChart.data = data
+            
+        
+                
+        let set = LineChartDataSet(entries: entries)
+        set.colors = ChartColorTemplates.pastel()
+        
+        let data = LineChartData(dataSet: set)
+        lineChart.data = data
     }
 
-
 }
-
